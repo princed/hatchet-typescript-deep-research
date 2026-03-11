@@ -88,7 +88,7 @@ export const deepResearchAgent = hatchet.task({
             input: {
               url: source.url,
               index: source.index,
-              title: source.title,
+              title: source.title ?? null,
             },
           }))
       );
